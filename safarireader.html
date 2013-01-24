@@ -8,7 +8,7 @@ inconclusive and not extremely helpful. What was helpful, however, was noticing
 that the lab assignment itself is a .html file that triggers the safari reader
  function. From this I compared the source code from the lab assignment website
  with the answer stated in stack overflow. </p>
-<p> The first solution I attempted was merely adding a < section > 
+<p> The first solution I attempted was merely adding a 'section'
 tag (without the spaces) to denote that this is a section that should trigger 
 safari's reader function. </p>
 <h2>First Attempt</h2>
@@ -30,8 +30,8 @@ safari browswer isn't activating reader. Attempting this change now. </p>
 <h2>Fourth and Final Attempt</h2>
 <p>I have successfully managed to trigger the reader with this code. <br>
 The critical steps are the following, taken from mathiasbynens.be/notes/safari-reader:
-<ol><li>A tag such as < section > or < div > must wrap around the entire code that is to appear in reader</li>
-<li>There must be at least 5 elements (< br > lines count as single elements) within the wrapper element </li>
+<ol><li>A tag such as 'section' or 'div' must wrap around the entire code that is to appear in reader</li>
+<li>There must be at least 5 elements ('br' lines count as single elements) within the wrapper element </li>
 <li>The file must not be a local file</li></ol> 
 </p>
 </section>
