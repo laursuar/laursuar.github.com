@@ -1,5 +1,5 @@
 body {
-  font-family:calibri;
+  font-family: calibri, arial;
 }
 
 h1 {
@@ -27,10 +27,10 @@ a:hover {
 img {
         padding: 40px;
 }
+
 #main {
       position:absolute;
-      top: 20%;
-      top-margin: -30px;
+      top: 200%;
       left: 38%;
       border:0;
       text-align:center;
