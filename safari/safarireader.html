@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html><head><meta charset='UTF-8'><title>Read me, Safari</title></head>
+<body><section><header><h1>Dear Safari, Please Read me.</h1></header>
+<h2>Introduction</h2>
+<p>To solve this problem, I looked at the stackoverflow question referenced 
+in the lab assignment. As the assignment states, the question is rather 
+inconclusive and not extremely helpful. What was helpful, however, was noticing
+that the lab assignment itself is a .html file that triggers the safari reader
+ function. From this I compared the source code from the lab assignment website
+ with the answer stated in stack overflow. </p>
+<p> The first solution I attempted was merely adding a 'section'
+tag (without the spaces) to denote that this is a section that should trigger 
+safari's reader function. </p>
+<h2>First Attempt</h2>
+<p>The first attempt, using merely the section tag, failed. I am now going to try 
+using the div tag.</p>
+<h2>Second Attempt</h2>
+<p>The second attempt, using both the div and the section tag, failed. I am 
+now going to re-review the stackoverflow question as well as the source code
+ for the assignment page</p>
+<h2>Third Attempt</h2>
+<p> I am now going to switch the section and div tags, starting first with the 
+div which will be followed by the section tag. After the initial attempt, 
+Safari still refuses to activate the reader tag. Do I have to add images and 
+content besides plain text? Do I have to add a cascading style sheet? </p>
+<h3>NOTE:</h3>
+<p>I've just learned thanks to mathiasbynens.be/notes/safari-reader that there 
+is a chance reader does not work on local files, and this may be the reason my 
+safari browswer isn't activating reader. Attempting this change now. </p>
+<h2>Fourth and Final Attempt</h2>
+<p>I have successfully managed to trigger the reader with this code. <br>
+The critical steps are the following, taken from mathiasbynens.be/notes/safari-reader:</p>
+<ol><li>A tag such as 'section' or 'div' must wrap around the entire code that is to appear in reader</li>
+<li>There must be at least 5 elements ('br' lines count as single elements) within the wrapper element </li>
+<li>The file must not be a local file</li></ol>
+</section>
+</body></html>
