@@ -1,0 +1,37 @@
+body {
+  font-family:calibri;
+}
+
+h1.index {
+   font-size: 40px;
+   font-weight:lighter;
+   color: #909090;
+   margin: 0;
+   text-transform: uppercase;
+   letter-spacing: 10px;
+}
+
+a.index{
+   font-size: 30px;
+   padding: 40px;
+   font-weight: normal;
+   color: #A8A8A8;
+   letter-spacing: 4px;
+   text-decoration: none;
+}
+
+a.index:hover {
+   color: #101010;
+}
+
+img.index {
+        padding: 40px;
+}
+#main {
+      position:absolute;
+      top: 20%;
+      top-margin: -30px;
+      left: 38%;
+      border:0;
+      text-align:center;
+}
