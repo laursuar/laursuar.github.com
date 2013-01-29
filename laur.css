@@ -2,7 +2,7 @@ body {
   font-family:calibri;
 }
 
-h1.index {
+h1 {
    font-size: 40px;
    font-weight:lighter;
    color: #909090;
@@ -11,7 +11,7 @@ h1.index {
    letter-spacing: 10px;
 }
 
-a.index{
+a{
    font-size: 30px;
    padding: 40px;
    font-weight: normal;
@@ -20,11 +20,11 @@ a.index{
    text-decoration: none;
 }
 
-a.index:hover {
+a:hover {
    color: #101010;
 }
 
-img.index {
+img {
         padding: 40px;
 }
 #main {
