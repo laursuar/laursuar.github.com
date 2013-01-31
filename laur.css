@@ -2,12 +2,6 @@ body {
   font-family: calibri, arial;
 }
 
-p {
-    font-size: 24px;
-    color: A8A8A8;
-    line-height: 25px;
-}
-
 h1{
    font-size: 40px;
    font-weight:lighter;
@@ -42,7 +36,7 @@ img {
       text-align:center;
 }
 
-#main p{
+p{
   font-family: calibri;
   font-size: 12px;
   line-height: 20px;
