@@ -8,7 +8,7 @@ p {
     line-height: 25px;
 }
 
-h1 {
+h1{
    font-size: 40px;
    font-weight:lighter;
    color: #909090;
@@ -41,3 +41,12 @@ img {
       border:0;
       text-align:center;
 }
+
+#main p{
+  font-family: calibri;
+  font-size: 12px;
+  line-height: 20px;
+  color: #808080
+  font-weight: lighter;
+}
+
