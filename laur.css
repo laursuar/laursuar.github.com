@@ -1,5 +1,6 @@
 body {
   font-family: calibri, arial;
+  vertical-align: center;
 }
 
 p {
@@ -35,9 +36,7 @@ img {
 }
 
 #main {
-      position:absolute;
-      top: 200%;
-      left: 38%;
-      border:0;
-      text-align:center;
+    margin-left: 25%;
+    margin-top: 25%;
 }
+
