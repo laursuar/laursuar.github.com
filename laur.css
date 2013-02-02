@@ -3,6 +3,11 @@ body {
   vertical-align: center;
 }
 
+#wrapper{
+    margin:0 auto;
+    width:500px;    
+}
+
 h1{
    font-size: 40px;
    font-weight:lighter;
@@ -10,6 +15,8 @@ h1{
    margin: 0;
    text-transform: uppercase;
    letter-spacing: 10px;
+   text-align:center;
+   padding-top:50px;
 }
 
 a{
@@ -27,19 +34,28 @@ a:hover {
 
 img {
         padding: 40px;
+	align:center;
 }
 
-#main {
-    margin-left: 25%;
-    margin-top: 25%;
+.main{
+    width:500px;
+    padding-right:50px;
 }
 
 p{
-  font-family: calibri;
+  font-family: calibri, sans-serif;
   font-size: 12px;
   line-height: 20px;
   color: #808080
   font-weight: lighter;
+  text-align:left;
 }
+
+#ind{
+ padding-right:50px;
+ padding-left:60px;
+}
+
+
 
 
