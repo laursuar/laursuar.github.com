@@ -1,6 +1,7 @@
 body {
   font-family: calibri, arial;
   vertical-align: center;
+  background-color: #F0F0F0;
 }
 
 #wrapper{
@@ -46,9 +47,9 @@ p{
   font-family: calibri, sans-serif;
   font-size: 12px;
   line-height: 20px;
-  color: #808080
+  color: #909090;
   font-weight: lighter;
-  text-align:left;
+  text-align:justify;
 }
 
 #ind{
