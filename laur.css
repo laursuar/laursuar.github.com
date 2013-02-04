@@ -59,7 +59,7 @@ h3{
     font-size:12px;
     color: #A8A8A8;
     font-style:italic;
-    padding-left:50px;
+    padding-left:20px;
 }
 
 h4{
@@ -76,7 +76,7 @@ a{
    text-decoration: none;
 }
 
-a:hover, a.activities:hover {
+a:hover, a.activities:hover, a.email:hover, a.fullname:hover {
    color: #101010;
 }
 
@@ -98,7 +98,7 @@ ol, ul{
     padding-left:25px;
 }
 
-a.email, p.fullname{
+.header, a.email, a.fullname{
     font-size:18px;
     letter-spacing:2px;
     line-height:17px;
@@ -107,6 +107,9 @@ a.email, p.fullname{
     font-family:calibri, sans-serif;
 }
 
+.education{
+    text-align:left;
+}
 .coursework{
     padding-left:50px;
 }
