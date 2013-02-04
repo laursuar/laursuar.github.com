@@ -8,10 +8,10 @@ body {
 #wrapper{
     margin:0 auto;
     width:500px;    
-    padding-bottom:100px;
+    padding-bottom:75px;
     padding-left:50px;
     padding-right:50px;
-    padding-top:100px;
+    padding-top:75px;
     background-color: #DFDFDF;
     align:center;
 }
@@ -71,7 +71,7 @@ h4{
 a{
    font-size: 30px;
    padding: 40px;
-   font-weight: normal;
+   font-weight: lighter;
    color: #A8A8A8;
    letter-spacing: 4px;
    text-decoration: none;
