@@ -1,7 +1,7 @@
 
 body {
   font-family: calibri, sans-serif;
-  background-color: #EFEFEF;
+  background-color: #A0A0A0;
 }
 
 #wrapper{
@@ -11,7 +11,6 @@ body {
     padding-left:50px;
     padding-right:50px;
     padding-top:75px;
-    background-color: #DFDFDF;
 }
 
 .main{
@@ -82,7 +81,7 @@ a:hover, a.activities:hover, a.email:hover, a.fullname:hover {
 
 p, ul, ol, .experience, a.activities{
   font-family: calibri, sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 20px;
   color: #909090;
   font-weight: lighter;
