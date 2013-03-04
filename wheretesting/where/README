@@ -1,0 +1,33 @@
+objectives
+	1. Use JSON APIs.
+	2. Build a mashup.
+	3. Use the Google Maps API.
+	4. Use the HTML5 geolocation API to determine your location.
+	5. Use and understand with event handling and exception handling.
+ 
+overview
+	1. Maps all the stations on the Red Line using Google Maps API version 
+	   3. A distinct icon marker (i.e., something other than the default 
+	   Google Maps icon for markers) must be used for all stations, and a 
+	   red polyline connecting all the stations must be rendered. Clicking 
+	   on a marker will display an info window with the name of the station.
+	2. Detects and maps your current location via navigator.geolocation 
+	   JavaScript object. An info window marking your location (e.g., "I am
+	   here at...") must be attached to your marker and displayed on the
+	   map.
+	3. Displays the closest Red Line station to your current location with 
+	   approximate distance away (in miles).
+	4. Clicking on a subway station marker will display an info window with
+	   the name of the station and arrival schedule (southbound and 
+	   northbound) for each station on the Red Line.  
+	5. Retrieves and displays the locations of Carmen Sandiego and Waldo.
+	6. Displays the distance (in miles) between you and Carmen Sandiego, 
+	   and you and Waldo. You can display this as an overlay on top of map 
+	   or on a side of the map. 
+
+INSTRUCTIONS:
+	1. Create a folder inside of your private github repo named where
+	2. one html file = index.html (not too mcuh)
+	3. write all js in a .js file
+	4. write all styling in a .css file
+
