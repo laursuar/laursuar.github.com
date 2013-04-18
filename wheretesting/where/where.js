@@ -1,5 +1,11 @@
 function start(){
-    console.log('start');
+ var mapOptions = {
+          center: new google.maps.LatLng(42.3583, -71.0603),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
 }
 function mapStations(){
     console.log('mapStations');

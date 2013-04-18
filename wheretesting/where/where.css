@@ -3,14 +3,11 @@ html {
 }
 
 body {
-    background-color: #000000;
-    font-family:arial;
-    color: #f9f9f9;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-#map{
+#map_canvas{
     height: 100%;
 }
