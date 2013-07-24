@@ -10,6 +10,7 @@ sprite.src = "assets/frogger_sprites.png";
 canvasx = 400; canvasy = 565;
 up = -2; down = 2; left = -1; right = 1;
 moveup = 10; froghome = 100; fivefrogs = 1000;
+gameOver = false;
 
 /* All kinetic game pieces */
 var pieces = new Array();
@@ -19,10 +20,13 @@ sprite.onload = function(){
 }
 
 function start_game(){
-    while(running){
-	document.onkeydown = move;
-	return setInterval(draw_game, 100);
-    }
+   while(running){
+	   document.onkeydown = move;
+	   if(gameOver) {
+         alert('in game over');
+      }
+      return setInterval(draw_game, 100);
+   }
 }
 
 function move(e) {
@@ -146,22 +150,22 @@ function piece(sx, sy, x, y, w, h, direction){
     }
     this.move = move;
     function move(dir){
-	if(dir == right || dir == left){
-	    this.x = this.x + this.w/2*dir;
-	} else if(dir == up || dir == down){
-	    dir = dir/2;
-	    this.y = this.y + this.h/2*dir;
-	    calc_score(moveup);
-	    if (lillipad() == true) { 
-		calc_score(froghome); 
-	    }
-	}
-	if (collide() == true) {
-	    alert("you lose");
-	}
-    }
-    this.collide = collide;
-    function collide(){
+	   if(dir == right || dir == left){
+	      this.x = this.x + this.w/2*dir;
+	   } else if(dir == up || dir == down){
+	      dir = dir/2;
+	      this.y = this.y + this.h/2*dir;
+	      calc_score(moveup);
+	      if (lillipad() == true) { 
+		      calc_score(froghome); 
+	      }
+	   }
+      if (collide() == true) {
+	      gameOver = true;
+      }
+   }
+   this.collide = collide;
+   function collide(){
 	if(this.x < 0 || this.x > canvasx) {
 	    return true;
 	} else if (this.y < 0 || this.y > canvasy) {
@@ -170,13 +174,13 @@ function piece(sx, sy, x, y, w, h, direction){
 	return false;
     }
     this.collision = collision;
-    function collision(){
-	for(j = this.x; j<this.x + this.w; j++){
+   function collision(){
+	 for(j = this.x; j<this.x + this.w; j++){
 	    for(k = this.y; k<this.y + this.h; k++){
 		if(frogger.x == j && frogger.y == k) {
-		    alert("collision");
-		}
-	    }
+		   return true;
+      }
+   }
 	}
     }
     this.checkx = checkx;
@@ -210,7 +214,8 @@ function lillipad(){
 	}
     } if (frogger.y == lillipady) {
 	alert("collision. die frog die.");
-    }
+    
+}
     return false;
 }
 
